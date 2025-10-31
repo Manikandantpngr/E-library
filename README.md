@@ -1,4 +1,4 @@
-# Firebase Studio
+# E-Library
 
 This is a NextJS starter in Firebase Studio.
 
