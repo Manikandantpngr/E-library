@@ -13,6 +13,7 @@ import {
 import { UserNav } from "@/components/user-nav";
 import { ELearningLogo } from "@/components/logo";
 import { Button } from '../ui/button';
+import { ThemeToggle } from '../theme-toggle';
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const { currentUser, logout } = useAuth();
@@ -46,6 +47,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                       Upload
                     </Button>
                   )}
+                  <ThemeToggle />
                   <UserNav user={currentUser} onLogout={logout} />
                 </nav>
             </div>

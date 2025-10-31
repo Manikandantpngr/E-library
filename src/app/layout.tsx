@@ -3,6 +3,7 @@ import './globals.css';
 import { AuthProvider } from '@/hooks/use-auth';
 import { Toaster } from "@/components/ui/toaster"
 import { cn } from '@/lib/utils';
+import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: 'E-Learning',
@@ -25,10 +26,17 @@ export default function RootLayout({
       <body className={cn(
         "min-h-screen bg-background font-body antialiased"
       )}>
-        <AuthProvider>
-          {children}
-          <Toaster />
-        </AuthProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <AuthProvider>
+            {children}
+            <Toaster />
+          </AuthProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
