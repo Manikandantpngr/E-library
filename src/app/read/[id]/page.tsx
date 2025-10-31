@@ -127,9 +127,3 @@ export default function ReadPage({ params }: { params: { id: string } }) {
     </div>
   );
 }
-
-export async function generateStaticParams() {
-  return books.map(book => ({
-    id: book.id,
-  }));
-}

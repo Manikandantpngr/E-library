@@ -77,9 +77,3 @@ export default function BookDetailPage({ params }: { params: { id: string } }) {
     </AppLayout>
   );
 }
-
-export async function generateStaticParams() {
-    return books.map(book => ({
-        id: book.id,
-    }));
-}
