@@ -1,7 +1,7 @@
 'use client';
 
 import { books } from '@/lib/data';
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -15,7 +15,8 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 
-export default function ReadPage({ params }: { params: { id: string } }) {
+export default function ReadPage() {
+  const params = useParams();
   const book = books.find(b => b.id === params.id);
 
   if (!book) {
