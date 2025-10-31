@@ -33,37 +33,12 @@ export default function LibraryPage() {
   return (
     <AppLayout>
       <div className="space-y-6">
-        <div>
-          <h1 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Library Catalog</h1>
-          <p className="text-muted-foreground">Browse and discover your next favorite book.</p>
-        </div>
-        
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input
-              placeholder="Search by title or author..."
-              className="pl-10"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
-          <Select value={selectedGenre} onValueChange={setSelectedGenre}>
-            <SelectTrigger className="w-full sm:w-[180px]">
-              <SelectValue placeholder="Filter by genre" />
-            </SelectTrigger>
-            <SelectContent>
-              {genres.map(genre => (
-                <SelectItem key={genre} value={genre}>
-                  {genre === 'all' ? 'All Genres' : genre}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+        <div className="mb-8">
+          <h1 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Library</h1>
         </div>
 
         {filteredBooks.length > 0 ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8">
             {filteredBooks.map(book => (
               <BookCard key={book.id} book={book} />
             ))}

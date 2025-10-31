@@ -5,8 +5,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'SecureLib',
-  description: 'An E-library with secure access.',
+  title: 'E-Learning',
+  description: 'Your E-Learning Platform.',
 };
 
 export default function RootLayout({

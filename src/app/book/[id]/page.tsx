@@ -19,7 +19,7 @@ export default function BookDetailPage({ params }: { params: { id: string } }) {
 
   return (
     <AppLayout>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto bg-card p-6 rounded-xl shadow-lg">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-1">
             <div className="relative aspect-[2/3] w-full rounded-lg overflow-hidden shadow-lg">
@@ -42,13 +42,11 @@ export default function BookDetailPage({ params }: { params: { id: string } }) {
             </div>
             
             <div className="flex items-center gap-4">
-              <Button size="lg" disabled={book.availability === 'checked_out'}>
-                <BookCheck className="mr-2 h-4 w-4" />
-                {book.availability === 'available' ? 'Check Out' : 'Unavailable'}
+              <Button size="lg" className="btn-gradient">
+                Details
               </Button>
               <Button size="lg" variant="outline">
-                <Bookmark className="mr-2 h-4 w-4" />
-                Add to Wishlist
+                Read Now
               </Button>
             </div>
 
