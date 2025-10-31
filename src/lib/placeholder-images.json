@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "dune",
+      "description": "Cover of Dune",
+      "imageUrl": "https://images.unsplash.com/photo-1709907197826-03d380e29e1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkeXN0b3BpYW4lMjBkZXNlcnR8ZW58MHx8fHwxNzYxODkzNzMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dystopian desert"
+    },
+    {
+      "id": "pride-and-prejudice",
+      "description": "Cover of Pride and Prejudice",
+      "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aW50YWdlJTIwcGFpbnRpbmd8ZW58MHx8fHwxNzYxODkzNzMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vintage painting"
+    },
+    {
+      "id": "mockingbird",
+      "description": "Cover of To Kill a Mockingbird",
+      "imageUrl": "https://images.unsplash.com/photo-1642933945167-008a1cf01867?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0cmVlJTIwc2lsaG91ZXR0ZXxlbnwwfHx8fDE3NjE4OTM3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tree silhouette"
+    },
+    {
+      "id": "1984",
+      "description": "Cover of 1984",
+      "imageUrl": "https://images.unsplash.com/photo-1725733618891-4df201ae7a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGV5ZXxlbnwwfHx8fDE3NjE4MjQ5MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract eye"
+    },
+    {
+      "id": "hobbit",
+      "description": "Cover of The Hobbit",
+      "imageUrl": "https://images.unsplash.com/photo-1717564954563-e0263d335695?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYW50YXN5JTIwbGFuZHNjYXBlfGVufDB8fHx8MTc2MTg0MDE5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy landscape"
+    },
+    {
+      "id": "gatsby",
+      "description": "Cover of The Great Gatsby",
+      "imageUrl": "https://images.unsplash.com/photo-1584448062042-bf847d8ae0ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcnQlMjBkZWNvfGVufDB8fHx8MTc2MTgxMDIyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "art deco"
+    },
+    {
+      "id": "foundation",
+      "description": "Cover of Foundation",
+      "imageUrl": "https://images.unsplash.com/photo-1470217957101-da7150b9b681?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmdXR1cmlzdGljJTIwY2l0eXxlbnwwfHx8fDE3NjE4NTc1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic city"
+    },
+    {
+      "id": "catcher-in-the-rye",
+      "description": "Cover of The Catcher in the Rye",
+      "imageUrl": "https://images.unsplash.com/photo-1612718423019-c3f5f93523e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyZWQlMjBjYXJvdXNlbHxlbnwwfHx8fDE3NjE4OTM3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "red carousel"
+    }
+  ]
 }
