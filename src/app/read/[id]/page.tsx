@@ -29,11 +29,14 @@ export default function ReadPage({ params }: { params: { id: string } }) {
         </Button>
       </header>
       <main className="max-w-3xl mx-auto p-8">
-        <div className="prose dark:prose-invert max-w-none">
+        <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-headline prose-headings:font-bold prose-p:text-justify">
+          <h2 className="text-3xl">{book.title}</h2>
+          <h3 className="text-2xl text-muted-foreground -mt-4">{book.author}</h3>
+          
           {bookContent.split('\n').map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-        </div>
+        </article>
       </main>
     </div>
   );
