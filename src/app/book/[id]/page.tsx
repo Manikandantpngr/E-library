@@ -3,6 +3,7 @@ import { books } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { BookCheck, Bookmark } from 'lucide-react';
@@ -43,10 +44,10 @@ export default function BookDetailPage({ params }: { params: { id: string } }) {
             
             <div className="flex items-center gap-4">
               <Button size="lg" className="btn-gradient">
-                Details
+                <Link href={`/book/${book.id}`}>Details</Link>
               </Button>
-              <Button size="lg" variant="outline">
-                Read Now
+              <Button size="lg" variant="outline" asChild>
+                <Link href={`/read/${book.id}`}>Read Now</Link>
               </Button>
             </div>
 

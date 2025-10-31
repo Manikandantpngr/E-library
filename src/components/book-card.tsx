@@ -36,7 +36,7 @@ export function BookCard({ book }: BookCardProps) {
           <Link href={`/book/${book.id}`}>Details</Link>
         </Button>
         <Button asChild size="sm" variant="outline" className="flex-1">
-          <Link href={`/book/${book.id}`}>Read Now</Link>
+          <Link href={`/read/${book.id}`}>Read Now</Link>
         </Button>
       </CardFooter>
     </Card>
